@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kolorowy sklep – zabawa z wierszem!</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Ten sklep jest najważniejszy</h1>
+  </header>
+
+  <main>
+    <section class="virsh">
+      <p>
+        Ten sklep jest najważniejszy,<br>
+        Bo tu najwięcej jest ludzi.<br>
+        Sklep pachnie chlebem i kawą,<br>
+        a czasem migdałami.<br>
+        Na kostkach masła wędrują czerwone, mleczne krowy,<br>
+        a na okrągłych puszkach ryby ruszają płetwami.<br>
+        Szeleści w torebkach cukier i sypkie ziarenka ryżu.<br>
+        W kompotach przegląda się słońce, rozświetla różowe lusterka.<br>
+        Wchodzę do sklepu z koszykiem, kupuję masło i kompot,<br>
+        topiony serek z koziołkiem i księżycowy rogalik.
+      </p>
+    </section>
+
+    <section class="task">
+      <h2>Zadanie 1</h2>
+      <p>Wypisz z wiersza nazwy produktów spożywczych:</p>
+      <textarea rows="3" cols="40" placeholder="Napisz tutaj..."></textarea>
+    </section>
+
+    <section class="task">
+      <h2>Zadanie 2</h2>
+      <p>Kliknij na produkty spożywcze:</p>
+      <div class="obrazki">
+        <img src="bread.png" alt="chleb" onclick="klik(this)" data-correct="true">
+        <img src="coffee.png" alt="kawa" onclick="klik(this)" data-correct="true">
+        <img src="ball.png" alt="piłka" onclick="klik(this)" data-correct="false">
+        <img src="butter.png" alt="masło" onclick="klik(this)" data-correct="true">
+      </div>
+      <p id="info"></p>
+    </section>
+  </main>
+
+  <footer>
+    © Solomia Butler
+  </footer>
+</body>
+</html>
